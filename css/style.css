@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#head {
+    background-color: #154360;
+    height: 100px;
+}
+
+#head a {
+    color: white;
+    text-decoration: none;
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 50px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#bi-main-menu {
+    display: block;
+    float:left;
+    width: 70%;
+    background-color: #1F618D;
+}
+
+#bi-main-menu a {
+    width: 25%;
+    display: block;
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#bi-login-logout {
+    display: block;
+    float: right;
+    width: 30%;
+    background-color: #2980B9;
+}
+
+#bi-login-logout a{
+    width: 50%;
+    float: right;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
