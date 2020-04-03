@@ -1,3 +1,6 @@
+ul {
+    padding: 0;
+}
 code {
     background-color: lightblue;
     padding: 8px;
@@ -5,6 +8,23 @@ code {
     border-radius: 10px;
     display: inline-block;
 }
+
+#nav {
+    margin-bottom: 5%;
+}
+
+.bi-menu {
+    font-family: 'Montserrat', sans-serif; /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    list-style-type: none;
+    padding-right: 15px;
+}
+
+.bi-menu a {
+    text-decoration: none;
+    color: #3c3ab9;
+}
+
+
 
 /* NOTE: #bi-main-menu a, .current-link -> added in style.css! */
 
@@ -16,12 +36,76 @@ code {
     width: auto;
 }
 
-.content-container {
-    width: 60%;
+.container-flex {
+    width: 1170px;
     margin: 0 auto;
+    display: flex;
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+    flex: 3;
+    font-family: Arial, Helvetica, sans-serif;
+    /*width: 60%; */
+    /*margin: 0 auto;*/
     padding: 0 25px;
+    background-color: #dde2ff;
+    border-radius: 10px;
+    margin: 0 25px;
 }
 
 .content-container h1 {
     padding: 50px 0;
+}
+
+#bi-app-container {
+    flex: 1;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 250px;
+    background-color: white;
+}
+#bi-app-container li {
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: solid 1px #ccc;
+}
+
+
+#bi-app-container a {
+    display: block;
+}
+
+#bi-app-container li:hover{
+    background-color: #D4E6F1;
+    border-radius: 2px;
+}
+
+#bi-app-container h3 {
+    text-align: center;
+}
+
+#dev-page-links {
+    flex: 1;
+    background-color: white;
+}
+#dev-page-links h3 {
+
+}
+
+#page-header {
+    margin-top: 25px;
+    text-align: center;
 }
