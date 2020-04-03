@@ -1,0 +1,27 @@
+code {
+    background-color: lightblue;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* NOTE: #bi-main-menu a, .current-link -> added in style.css! */
+
+.current-link {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 0 15px;
+    width: auto;
+}
+
+.content-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.content-container h1 {
+    padding: 50px 0;
+}
