@@ -1,6 +1,7 @@
-ul {
+/*ul {
     padding: 0;
-}
+}*/
+
 code {
     background-color: lightblue;
     padding: 8px;
@@ -14,16 +15,31 @@ code {
 }
 
 .bi-menu {
+    padding: 0;
     font-family: 'Montserrat', sans-serif; /* 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     list-style-type: none;
     padding-right: 15px;
 }
+
+
 
 .bi-menu a {
     text-decoration: none;
     color: #3c3ab9;
 }
 
+/* 
+*   .bi-articles müssen unter .bi-menu stehen, 
+*     da höhere Priorität beim Design
+*/
+
+.bi-articles {
+
+}
+
+.bi-articles a:hover {
+    text-decoration: underline;
+}
 
 
 /* NOTE: #bi-main-menu a, .current-link -> added in style.css! */
@@ -110,4 +126,19 @@ li, a {
 #page-header {
     margin-top: 25px;
     text-align: center;
+}
+
+/* Footer */
+#footer {
+    background-color: #154360;
+    color: white;
+    width: 100%;
+    padding: 25px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    margin: 50px;
+    padding-left: 50px;
 }

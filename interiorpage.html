@@ -31,7 +31,7 @@
     <div class="container-flex">
         <div id="dev-page-links">
             <h2>Entwickler-Bereich</h2>
-            <ul class="bi-menu">
+            <ul class="bi-menu bi-articles">
                 <li><a href="#">Vorbereitung</a></li>
                 <li><a href="#">GitHub Workflow</a></li>
                 <li><a href="#">Aufgaben</a></li>
@@ -39,29 +39,40 @@
         </div>
 
         <div class="content-container">
-            <p><h2>GitHub Workflow</h2>
-            <p>Zu allererst muss Git installiert werden. Für Windows geht man dafür hierhin:<br /><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
-            <h3>Auf welchem Repository arbeite ich?</h3>
-            <p class="has-text-align-left">Es stehen unterschiedliche Archive zur Verfügung. Um daran arbeiten zu können, muss es auf den lokalen Rechner kopiert werden.<br />Das macht man mit dem Befehl:<br /><code>git clone https://github.com/dev-bi/REPOSITORY.git</code></p>
-            <p>Bisher stehen die folgenden Repositories zur Verfügung:</p>
-            <p>Das statische Design ist im Repository <strong>bi-kompass-static-v2 </strong>abgelegt. Es wird jeden Montag in die WordPress-Umgebung eingepflegt.</p>
-            <p><strong>wp-kompass-theme:</strong> Das ist das Worpress-Theme – sozusagen, die Hauptseite des Intranets</p>
-            <p><strong>bi-kompass-component-service:</strong> hier befindet sich unter anderem die Suche und der interaktive Raumplan. Später können weitere Komponenten hinzukommen, z.B. einen IaK-Plan oder ein WhoisWho von den Mitarbeitern, wenn man will.</p>
-            <p>Im Repository <strong>interaktiver-raumplan</strong> wird an dem Raumplan gearbeitet, bevor er in das System integriert wird. Ebenso das Repository <strong>bi-suchleiste</strong>.</p>
-            <p>Kleine Bilder, also das Logo, die Symbole für Schaltflächen, Suche, Navigation, das Favicon, kommen in das Repository <strong>design-misc</strong>.</p>
-            <h3>Ein Beispiel für das Arbeiten am Layout (CSS / HTML)</h3>
-            <p>Ordner öffnen, der für das lokale Arbeiten bestimmt ist und dort Rechtsklick und git-bash öffnen wählen und eine Arbeitskopie mit<br /><code>git clone https://dev-bi/bi-kompass-static-v2.git</code><br />erstellen.</p>
-            <p>Dann einen neuen Branch erstellen, auf dem die Änderungen gespeichert werden. Dafür sollte ein aussagekräftiger Name verwendet werden:<br /><code>git checkout -b rechte-navigation-anpassen</code><br />Noch einmal mit<br /><code>git branch</code><br />überprüfen, wo man sich befindet.<br /><code>git status</code><br />zeigt die Änderungen an.</p>
-            <p>Jetzt wird am Code gearbeitet, neue Dateien und Ordner erstellt, was eben so anfällt.</p>
-            <p>Wenn die Arbeit beendet ist, werden mit<br /><code>git add -A</code><br />alle Dateien dem Index hinzugefügt. Um die Änderungen dann ins lokale Archiv zu schreiben, muss man<br /><code>git commit -m "hier eine Nachricht, was getan wurde"</code><br />eingeben.</p>
-            <p>Und jetzt den Branch auf den GitHub Server hochladen, damit die Änderungen in die laufende Anwendung integriert werden können.<br /><code>git push -u origin recht-navigation-anpassen</code></p>
-            <p> </p>
-            <h3>Verwaltung von großen Bildern</h3>
-            <h3>Verwaltung von kleinen Bildern. Symbole für Schaltflächen</h3>
-            <p> </p>
+            <div class="bi-kompass-content-container">
+                <p><h2>GitHub Workflow</h2>
+                    <p>Zu allererst muss Git installiert werden. Für Windows geht man dafür hierhin:<br /><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+                    <h3>Auf welchem Repository arbeite ich?</h3>
+                    <p class="has-text-align-left">Es stehen unterschiedliche Archive zur Verfügung. Um daran arbeiten zu können, muss es auf den lokalen Rechner kopiert werden.<br />Das macht man mit dem Befehl:<br /><code>git clone https://github.com/dev-bi/REPOSITORY.git</code></p>
+                    <p>Bisher stehen die folgenden Repositories zur Verfügung:</p>
+                    <p>Das statische Design ist im Repository <strong>bi-kompass-static-v2 </strong>abgelegt. Es wird jeden Montag in die WordPress-Umgebung eingepflegt.</p>
+                    <p><strong>wp-kompass-theme:</strong> Das ist das Worpress-Theme – sozusagen, die Hauptseite des Intranets</p>
+                    <p><strong>bi-kompass-component-service:</strong> hier befindet sich unter anderem die Suche und der interaktive Raumplan. Später können weitere Komponenten hinzukommen, z.B. einen IaK-Plan oder ein WhoisWho von den Mitarbeitern, wenn man will.</p>
+                    <p>Im Repository <strong>interaktiver-raumplan</strong> wird an dem Raumplan gearbeitet, bevor er in das System integriert wird. Ebenso das Repository <strong>bi-suchleiste</strong>.</p>
+                    <p>Kleine Bilder, also das Logo, die Symbole für Schaltflächen, Suche, Navigation, das Favicon, kommen in das Repository <strong>design-misc</strong>.</p>
+                    <h3>Ein Beispiel für das Arbeiten am Layout (CSS / HTML)</h3>
+                    <p>Ordner öffnen, der für das lokale Arbeiten bestimmt ist und dort Rechtsklick und git-bash öffnen wählen und eine Arbeitskopie mit<br /><code>git clone https://dev-bi/bi-kompass-static-v2.git</code><br />erstellen.</p>
+                    <p>Dann einen neuen Branch erstellen, auf dem die Änderungen gespeichert werden. Dafür sollte ein aussagekräftiger Name verwendet werden:<br /><code>git checkout -b rechte-navigation-anpassen</code><br />Noch einmal mit<br /><code>git branch</code><br />überprüfen, wo man sich befindet.<br /><code>git status</code><br />zeigt die Änderungen an.</p>
+                    <p>Jetzt wird am Code gearbeitet, neue Dateien und Ordner erstellt, was eben so anfällt.</p>
+                    <p>Wenn die Arbeit beendet ist, werden mit<br /><code>git add -A</code><br />alle Dateien dem Index hinzugefügt. Um die Änderungen dann ins lokale Archiv zu schreiben, muss man<br /><code>git commit -m "hier eine Nachricht, was getan wurde"</code><br />eingeben.</p>
+                    <p>Und jetzt den Branch auf den GitHub Server hochladen, damit die Änderungen in die laufende Anwendung integriert werden können.<br /><code>git push -u origin recht-navigation-anpassen</code></p>
+                    <p> </p>
+                    <h3>Verwaltung von großen Bildern</h3>
+                    <h3>Verwaltung von kleinen Bildern. Symbole für Schaltflächen</h3>
+                    <p> </p>
+                    
+                    <h3>Eine übersichtliche Seite zu dem Thema:</h3>
+            </div>
+
+            <div class="bi-kompass-content-container">
+                <h2>Inhalt mit einer Liste</h2>
+                <ul>
+                    <li>Ein wichtiger Punkt</li>
+                    <li>Ein anderer wichtiger Punkt</li>
+                    <li>Ein dritter Aspekt der Sache</li>
+                </ul>
+            </div>
             
-            
-            <h3>Eine übersichtliche Seite zu dem Thema:</h3>
             
             
             
