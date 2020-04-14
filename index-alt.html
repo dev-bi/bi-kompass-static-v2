@@ -6,42 +6,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="interior-style.css">
-    <title>BI - Kompass</title>
+
+    <title>BI - Kompass (Skelett)</title>
+    
 </head>
 <body>
-
-    <div id="head">
-        <a href="#">BI - Kompass</a>
-    </div>
-    <div id="nav">
-        <div id="bi-main-menu">
-            <span class="current-link">Entwickler-Bereich</span>
-            <a href="#">Home</a>
-            <a href="#">Über das BI</a>
-            <a href="#">Bereiche</a>
-            <a href="#">Muh</a>
-            <a href="#">Suche</a>
+    <div id="wrapper">
+        <!--header -->
+        <div id="head">
+            <a href="#">BI - Kompass</a>
         </div>
-        <div id="bi-login-logout">
-            <a href="#">Stefan Simon</a>
-            <a href="#">Logout</a>
+        <div id="nav">
+            <div id="bi-main-menu"><a href="#">Home</a>
+                <a href="#">Über das BI</a>
+                <a href="#">Bereiche</a>
+                <a href="#">Muh</a>
+                <a href="#">Suche</a>
+            </div>
+            <div id="bi-login-logout">
+                <a href="#">Stefan Simon</a>
+                <a href="#">Logout</a>
+            </div>
+            
         </div>
-        
-    </div>
-
-    <div class="container-flex">
-        <div id="dev-page-links">
-            <h2>Hauptartikel</h2>
-            <ul class="bi-menu bi-articles">
-                <li><a href="#">Bericht über Corona</a></li>
-                <li><a href="#">Tragisches Ende einer Ära</a></li>
-                <li><a href="#">Neues aus der IT</a></li>
-                <li><a href="#">Das Meerschwein quieckt lauter als gedacht</a></li>
-                <li><a href="#">Ein neuer Bericht</a></li>
-            </ul>
+        <!-- BI Apps -->
+        <div id="nav-bar-right">
+            <div id="nav-bar-right-header">Kompass - Pfadfinder</div>
+            <div id="nav-bar-right-content">
+                <ul>
+                    <li class="nav-bar-right-content-element"><a href=#>Suche</a></li>
+                    <li class="nav-bar-right-content-element"><a href="#">Interaktiver Raumplan</a></li>
+                    <li class="nav-bar-right-content-element"><a href="#">IaK - Finder</a></li>
+                </ul>
+                <!--
+                <div class="nav-bar-right-content-element">Suche</div>
+                <div class="nav-bar-right-content-element">Interaktiver Raumplan</div>
+                <div class="nav-bar-right-content-element">IaK-Finder</div>
+                -->
+            </div>
         </div>
-
-        <div class="content-container">
+        <!-- Suchleiste-->
+        <div id="search-wrapper" class="container">
+            <div id="search-bar">
+                <label>BI - Suche</label>
+                <input type="text" name="sstring" placeholder="Suchbegriff eingeben...">
+            </div>
+        </div>
+        <!-- Inhalt-->
+        <div id="content-wrapper" class="container">
             <div class="bi-kompass-content-container">
                 <h2>Wirklich wichtige News</h2>
                 <p>
@@ -77,27 +89,16 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
                 </p>
                 <hr>
             </div>
-
         </div>
-
-        <div id="bi-app-container">
-            <h3>Pfadfinder</h3>
-            <ul class="bi-menu">
-                <li><a href="#">Suche</a></li>
-                <li><a href="#">Interaktiver Raumplan</a></li>
-                <li><a href="#">IaK Finder</a></li>
-            </ul>
+        <div id="footer">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">Noch ein Link</a>
         </div>
-    
-        
     </div>
+
     
-   
-    <div id="footer">
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">Noch ein Link</a>
-    </div> 
     
+
 </body>
 </html>
