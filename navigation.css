@@ -85,6 +85,7 @@ body {
 
 /* Display none! */
 .burger {
+    cursor: pointer;
     display: none;
     padding: 20px 20px;
     background-color: #1F618D;
@@ -98,20 +99,39 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-   
+   .menu-nav {
+       font-size: small;
+   }
 }
 
 @media screen and (max-width: 768px) {
     body {
         margin: 0;
+        overflow-x: hidden;
     }
 
     .nav {
         min-height: 60px; 
     }
+
     .menu-nav {
-        display: none;
+        position: absolute;
+        margin-top: 60px;
+        width: 50%;
+        transform: translateX(-100%);
     }
+
+    .menu-nav-active {
+        transform: translateX(0%);
+    }
+
+    .menu-nav ul {
+        display: flex;
+        height: 75vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     .bi-main-menu li {
         width: 40%;

@@ -14,7 +14,8 @@
         <h2 class="bi-header"><a href="#">BI - Kompass</a></h1>
     </div>
     <div id="nav" class="nav">
-        <div class="burger">
+
+        <div id="js-burger" class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -27,8 +28,7 @@
                 <li><a href="#">Vario</a></li>
                 <li><a href="#">Fachbereiche</a></li>
                 <li><a href="#">Suche</a></li>
-            </ul>      
-            
+            </ul>   
             
         </div>
         <div id="bi-login-logout" class="bi-main-menu menu-login-logout">
@@ -39,6 +39,20 @@
         </div>
         
     </div>
+
+    <script>
+        /*
+        * Toggle Nav-Bar 
+        *
+        */
+        const burger = document.getElementById('js-burger');
+        const burgerNav = document.getElementById('bi-main-menu');
+
+        burger.addEventListener('click', function() {
+            burgerNav.classList.toggle('menu-nav-active'); 
+        }); 
+
+    </script>
     
 </body>
 </html>
