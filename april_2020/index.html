@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="interior-style.css">
+    <link rel="stylesheet" href="navigation.css">
     <title>BI - Kompass</title>
 </head>
 <body>
+   <!----------------->
+    <!--   HEADER    -->
+    <!----------------->
 
-    <div id="head">
-        <a href="#">BI - Kompass</a>
+    <!-- Logo, Schriftzug und Burgermenü -->
+    <div id="head" class="header">
+        <h2 class="bi-header"><a href="#">BI - Kompass</a></h1>
     </div>
-    <div id="nav">
-        <div id="bi-main-menu">
-            <span class="current-link">Entwickler-Bereich</span>
-            <a href="#">Home</a>
-            <a href="#">Über das BI</a>
-            <a href="#">Bereiche</a>
-            <a href="#">Muh</a>
-            <a href="#">Suche</a>
+    <div id="nav" class="nav">
+
+        <div id="js-burger" class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
-        <div id="bi-login-logout">
-            <a href="#">Stefan Simon</a>
-            <a href="#">Logout</a>
+        <!-- Bereiche -->
+        <div id="bi-main-menu" class="bi-main-menu menu-nav">
+            <ul>
+                <li><a href="#" style="color:#fb8c84">Dev-Bereich</a></li>
+                <li><a href="#">Primo</a></li>
+                <li><a href="#">Reha</a></li>
+                <li><a href="#">Vario</a></li>
+                <li><a href="#">Fachbereiche</a></li>
+                <li><a href="#">Suche</a></li>
+            </ul>   
+        </div>
+        <!-- Menü für geschützten Bereich -->
+        <div id="bi-login-logout" class="bi-main-menu menu-login-logout">
+            <ul>
+                <li><a href="#">Stefan Simon</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
         </div>
         
     </div>
+
+    <script>
+        /*
+        * Toggle Nav-Bar (Bei weniger als 769px)
+        *
+        * Klappt Menü ein und aus, wenn man das Burgersymbol klickt/berührt
+        */
+        const burger = document.getElementById('js-burger');
+        const burgerNav = document.getElementById('bi-main-menu');
+
+        burger.addEventListener('click', function() {
+            burgerNav.classList.toggle('menu-nav-active'); 
+        }); 
+
+    </script>
+    <!----------------->
+    <!-- HEADER ENDE -->
+    <!----------------->
+
+    <!-------------------->
+    <!--    CONTENT     -->
+    <!-------------------->
 
     <div class="container-flex">
         <div id="dev-page-links">
@@ -87,17 +127,24 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
                 <li><a href="#">Interaktiver Raumplan</a></li>
                 <li><a href="#">IaK Finder</a></li>
             </ul>
-        </div>
-    
-        
+        </div>  
     </div>
+    <!-------------------->
+    <!--  CONTENT ENDE  -->
+    <!-------------------->
     
    
+    <!-------------------->
+    <!--    FOOTER      -->
+    <!-------------------->
     <div id="footer">
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
         <a href="#">Noch ein Link</a>
-    </div> 
+    </div>
+    <!-------------------->
+    <!--  FOOTER ENDE   -->
+    <!--------------------> 
     
 </body>
 </html>

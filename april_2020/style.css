@@ -1,0 +1,57 @@
+html {
+    background-color: #154360;
+}
+body {
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+    background-color: white;
+}
+
+/* Containerklassen */
+
+.container {
+    background-color: white;
+    margin: 125px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-flex {
+        margin: 0;
+        width: auto;
+    }
+
+    .content-container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-container {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    #dev-page-links {
+    }
+    #bi-app-container {
+        display:none;
+    }
+
+    .container-flex{
+        flex-direction: column;
+        width: auto;
+    }
+
+}
